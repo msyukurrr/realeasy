@@ -8,23 +8,20 @@ export default function Home() {
   const [location, setLocation] = useState("");
   const [data, setData] = useState({});
 
- const axios = require("axios");
+  var apiKey = "f197265764msh59f234f4c4e0ab5p1bcc23jsndfd04c467645";
+  const url = `https://realty-in-ca1.p.rapidapi.com/keywords/list`
 
-const options = {
-  method: 'GET',
-  url: 'https://realty-in-ca1.p.rapidapi.com/locations/auto-complete',
-  params: {Area: 'langley', CultureId: '1'},
-  headers: {
-    'X-RapidAPI-Key': '30459a32bdmsh93cc18386cfa39ap1de118jsn0077ac10a5c7',
-    'X-RapidAPI-Host': 'realty-in-ca1.p.rapidapi.com'
-  }
-};
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+
+    axios.get(url)
+    .then((response) => {
+      console.clear();
+      setData(response.data)
+      console.log(response.data);
+    }).catch(err => {
+      console.log(err);
+    })
+
 
 
 
@@ -37,9 +34,13 @@ axios.request(options).then(function (response) {
       </Head>
 
       <main className={styles.main}>
-
-       
-       
+        <input
+          value={location}
+          onChange={event => setLocation(event.target.value)}
+          placeholder="Enter Location"
+          onKeyDown={searchLocation}
+          type='text'
+        />
       </main>
 
     </>

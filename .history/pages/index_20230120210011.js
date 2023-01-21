@@ -13,7 +13,7 @@ export default function Home() {
 const options = {
   method: 'GET',
   url: 'https://realty-in-ca1.p.rapidapi.com/locations/auto-complete',
-  params: {Area: 'langley', CultureId: '1'},
+  params: {Area: 'British Columbia', CultureId: '1'},
   headers: {
     'X-RapidAPI-Key': '30459a32bdmsh93cc18386cfa39ap1de118jsn0077ac10a5c7',
     'X-RapidAPI-Host': 'realty-in-ca1.p.rapidapi.com'
@@ -38,7 +38,7 @@ axios.request(options).then(function (response) {
 
       <main className={styles.main}>
 
-       
+        <div>{data}</div>
        
       </main>
 
