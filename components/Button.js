@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 const ButtonCont = styled.div`
 display: flex;
-justify-content: center;
 `
 
 const Button = styled.button`
+display:flex;
+flex-direction: column;
+margin: 10px;
+align-items: center;
+justify-content: center;
 background-color: white;
 color: #5AA1FD;
 height: 69px;
@@ -24,13 +28,20 @@ height: 40px;
 width: 40px;
 `
 
+const Lbl = styled.span`
+display: block;
+font-size: 11px;
+`
+
 export default function MainButton ({ 
     onClick=()=>{},
-    src='./logo.png'
+    src='./logo.png',
+    lbltxt='House'
 }){
     return <ButtonCont>
         <Button>
             <Icon src={src}></Icon>
+            <Lbl>{lbltxt}</Lbl>
         </Button>
     </ButtonCont>
 }

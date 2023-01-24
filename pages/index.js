@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import { useState } from 'react'
 import MainButton from '../components/Button'
 import axios from 'axios'
+import { Main } from 'next/document'
+import CatButton from '../components/CatButton'
 
 export default function Home() {
   const [location, setLocation] = useState("");
@@ -38,8 +40,8 @@ axios.request(options).then(function (response) {
       </Head>
 
       <main className={styles.main}>
-
-       <MainButton></MainButton>
+      
+      <CatButton></CatButton>
        
       </main>
 
