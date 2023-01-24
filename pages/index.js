@@ -42,6 +42,15 @@ axios.request(options).then(function (response) {
       <main className={styles.main}>
       
       <CatButton></CatButton>
+      <MainButton
+      w='135px'
+      h='135px'
+      src='./findanagent.png'
+      iconh='70px'
+      iconw='95px'
+      lbltxt='Find an Agent'
+      fs='16px'
+      ></MainButton>
        
       </main>
 
