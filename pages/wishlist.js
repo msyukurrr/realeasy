@@ -1,5 +1,10 @@
+import NavBar from "../components/NavBar";
+
 export default function Wishlist(){
     return(
-        <>Wishlist Page</>
+        <>
+        <NavBar></NavBar>
+        WISHLIST PAGE
+        </>
     )
 }

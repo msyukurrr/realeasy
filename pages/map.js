@@ -1,5 +1,10 @@
+import NavBar from "../components/NavBar";
+
 export default function Map(){
     return(
-        <>Map Page</>
+        <>
+        <NavBar></NavBar>
+        MAPS PAGE
+        </>
     )
 }

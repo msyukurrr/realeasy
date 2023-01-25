@@ -1,5 +1,10 @@
+import NavBar from "../components/NavBar";
+
 export default function Listing(){
     return(
-        <>Listing Page</>
+        <>
+        <NavBar></NavBar>
+        LISTING PAGE
+        </>
     )
 }

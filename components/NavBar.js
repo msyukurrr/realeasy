@@ -83,7 +83,7 @@ export default function NavBar({
                 <NavList>Wishlist</NavList>
             </WishlistCont>
         </Link>
-        <Link href="/wishlist">
+        <Link href="/listing">
             <ListingCont margintop="4px">
                 <Icon src='./listing.png' height="38px" width="45px"></Icon>
                 <NavList>Listing</NavList>
@@ -92,7 +92,7 @@ export default function NavBar({
         <Link href="/profile">
             <ListingCont margintop="4px">
                 <Icon src='./user.png' height="38px" width="40px"></Icon>
-                <NavList>Listing</NavList>
+                <NavList>Profile</NavList>
             </ListingCont>
         </Link>
     </NavCont>
