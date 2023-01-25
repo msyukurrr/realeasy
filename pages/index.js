@@ -1,15 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
 import MainButton from '../components/Button'
 import axios from 'axios'
-import { Main } from 'next/document'
 import CatButton from '../components/CatButton'
+import NavBar from '../components/NavBar'
 
 export default function Home() {
-  const [location, setLocation] = useState("");
-  const [data, setData] = useState({});
 
  const axios = require("axios");
 
@@ -51,6 +48,8 @@ axios.request(options).then(function (response) {
       lbltxt='Find an Agent'
       fs='16px'
       ></MainButton>
+
+      <NavBar></NavBar>
        
       </main>
 
