@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import MainButton from '../components/Button'
 import axios from 'axios'
 import CatButton from '../components/CatButton'
 import NavBar from '../components/NavBar'
 
 export default function Home() {
-
+  const r = useRouter();
  const axios = require("axios");
 
 const options = {
@@ -38,7 +39,7 @@ axios.request(options).then(function (response) {
 
       <main className={styles.main}>
       
-      <CatButton></CatButton>
+      <div style={{display:'flex'}}>
       <MainButton
       w='135px'
       h='135px'
@@ -47,7 +48,18 @@ axios.request(options).then(function (response) {
       iconw='95px'
       lbltxt='Find an Agent'
       fs='16px'
+      onClick={() => r.push("/findanagent")}
       ></MainButton>
+      <MainButton
+      w='135px'
+      h='135px'
+      src='./lightbulb.png'
+      iconh='75px'
+      iconw='80px'
+      lbltxt='Tips'
+      fs='16px'
+      ></MainButton>
+      </div>
 
       <NavBar></NavBar>
        

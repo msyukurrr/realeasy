@@ -44,7 +44,7 @@ export default function MainButton ({
     iconw="35px"
 }){
     return <ButtonCont>
-        <Button height={h} width={w}>
+        <Button onClick={onClick} height={h} width={w}>
             <Icon src={src} height={iconh} width={iconw}></Icon>
             <Lbl fontsize={fs}>{lbltxt}</Lbl>
         </Button>
