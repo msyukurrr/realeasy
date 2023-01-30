@@ -6,27 +6,15 @@ import MainButton from '../components/Button'
 import axios from 'axios'
 import CatButton from '../components/CatButton'
 import NavBar from '../components/NavBar'
+import ListCard from '../components/ListCard'
+import FavCard from '../components/FavCard'
+
 import CircleIcon from '../components/IconCircle'
+
 
 export default function Home() {
   const r = useRouter();
- const axios = require("axios");
 
-const options = {
-  method: 'GET',
-  url: 'https://realty-in-ca1.p.rapidapi.com/locations/auto-complete',
-  params: {Area: 'langley', CultureId: '1'},
-  headers: {
-    'X-RapidAPI-Key': '30459a32bdmsh93cc18386cfa39ap1de118jsn0077ac10a5c7',
-    'X-RapidAPI-Host': 'realty-in-ca1.p.rapidapi.com'
-  }
-};
-
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
 
 
 
@@ -43,25 +31,29 @@ axios.request(options).then(function (response) {
       <CircleIcon></CircleIcon>
 
       <div style={{display:'flex'}}>
-        <MainButton
-          w='135px'
-          h='135px'
-          src='./findanagent.png'
-          iconh='70px'
-          iconw='95px'
-          lbltxt='Find an Agent'
-          fs='16px'
-          onClick={() => r.push("/findanagent")}
-        ></MainButton>
-        <MainButton
-          w='135px'
-          h='135px'
-          src='./lightbulb.png'
-          iconh='75px'
-          iconw='80px'
-          lbltxt='Tips'
-          fs='16px'
-        ></MainButton>
+
+        <FavCard />
+        <ListCard/>
+      <MainButton
+      w='135px'
+      h='135px'
+      src='./findanagent.png'
+      iconh='70px'
+      iconw='95px'
+      lbltxt='Find an Agent'
+      fs='16px'
+      onClick={() => r.push("/findanagent")}
+      ></MainButton>
+      <MainButton
+      w='135px'
+      h='135px'
+      src='./lightbulb.png'
+      iconh='75px'
+      iconw='80px'
+      lbltxt='Tips'
+      fs='16px'
+      ></MainButton>
+
       </div>
 
       <NavBar></NavBar>
