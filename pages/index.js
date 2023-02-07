@@ -30,30 +30,32 @@ export default function Home() {
       
       <CircleIcon></CircleIcon>
 
-      <div style={{display:'flex'}}>
+      <div style={{display:'flex', flexDirection:"column", marginTop:0}}>
+  
+      <div style={{display:"flex", marginTop:"-300px"}}>
+          <MainButton
+            w='135px'
+            h='135px'
+            src='./findanagent.png'
+            iconh='70px'
+            iconw='95px'
+            lbltxt='Find an Agent'
+            fs='16px'
+            onClick={() => r.push("/findanagent")}
+          ></MainButton>
+          <MainButton
+            w='135px'
+            h='135px'
+            src='./lightbulb.png'
+            iconh='75px'
+            iconw='80px'
+            lbltxt='Tips'
+            fs='16px'
+          ></MainButton>
+      </div>
 
-        <FavCard />
+      <div></div>
         <ListCard/>
-      <MainButton
-      w='135px'
-      h='135px'
-      src='./findanagent.png'
-      iconh='70px'
-      iconw='95px'
-      lbltxt='Find an Agent'
-      fs='16px'
-      onClick={() => r.push("/findanagent")}
-      ></MainButton>
-      <MainButton
-      w='135px'
-      h='135px'
-      src='./lightbulb.png'
-      iconh='75px'
-      iconw='80px'
-      lbltxt='Tips'
-      fs='16px'
-      ></MainButton>
-
       </div>
 
       <NavBar></NavBar>

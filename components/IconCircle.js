@@ -2,9 +2,10 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const Container = styled.div`
-display: flex;
-margin-top: -550px;
+position: fixed;
 margin-left: 400px;
+top: 0;
+margin-top: 20px;
 `
 const Map = styled.img`
 height: 40px;
