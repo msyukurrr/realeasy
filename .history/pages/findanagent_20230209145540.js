@@ -6,16 +6,12 @@ import Heading from "../components/Heading";
 export default function FindAnAgent(){
     return(
         <>
-        <Heading color="#5AA1FD" ></Heading>
-
-        <div style={{marginTop:50}}>
+        <Heading color="#5AA1FD" style={{paddingBottom:10}}></Heading>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
-        </div>
-       
 
 
 

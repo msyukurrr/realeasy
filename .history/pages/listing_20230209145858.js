@@ -65,7 +65,7 @@ const searchLocation = (event) => {
 
     return ( <><div className={styles.listing}>
             <Heading headingtxt="Where are you looking?" color="white"/>
-        <form style={{paddingTop:15}}>
+        <form style={{paddingTop:10}}>
               <input placeholder="Type a city..." 
               style={{width:230, height:50, borderRadius:10, backgroundColor:"white", border:'transparent'}}
               value={location}

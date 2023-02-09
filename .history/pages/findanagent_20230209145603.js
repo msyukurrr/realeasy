@@ -7,15 +7,11 @@ export default function FindAnAgent(){
     return(
         <>
         <Heading color="#5AA1FD" ></Heading>
-
-        <div style={{marginTop:50}}>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
         <AgentListing></AgentListing>
-        </div>
-       
 
 
 

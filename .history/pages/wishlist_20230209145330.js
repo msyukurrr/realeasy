@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 export default function Wishlist(){
     return(
         <>
-        <Heading headingtxt="Wishlist" color="#5AA1FD"></Heading>
+        <Heading headingtxt="Wishlist" color="#E6EEF8"></Heading>
         <NavBar></NavBar>
         </>
     )

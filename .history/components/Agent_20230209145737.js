@@ -16,7 +16,7 @@ margin: 10px;
 const Image = styled.img`
 height: 80px;
 width: 80px;
-border-radius: 20px;
+border-radius: 50%;
 display: flex;
 margin-left: 15px;
 margin-top: 10px;

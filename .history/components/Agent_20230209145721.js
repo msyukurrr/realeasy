@@ -7,16 +7,16 @@ justify-content: center;
 
 const Box = styled.div`
 display: flex;
-height: 100px;
+height: 150px;
 width: 350px;
 background-color: white;
 border-radius: 15px;
 margin: 10px;
 `
 const Image = styled.img`
-height: 80px;
-width: 80px;
-border-radius: 20px;
+height: 130px;
+width: 130px;
+border-radius: 50%;
 display: flex;
 margin-left: 15px;
 margin-top: 10px;

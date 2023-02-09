@@ -14,9 +14,9 @@ border-radius: 15px;
 margin: 10px;
 `
 const Image = styled.img`
-height: 80px;
-width: 80px;
-border-radius: 20px;
+height: 130px;
+width: 130px;
+border-radius: 50%;
 display: flex;
 margin-left: 15px;
 margin-top: 10px;
