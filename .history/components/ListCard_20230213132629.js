@@ -16,7 +16,7 @@ const TextCont = styled.div`
     position:absolute;
     background-color:white;
     z-index:1;
-    width:80%;
+    width:280px;
     height:20%;
     margin-top:120px;
     border-radius:20px;

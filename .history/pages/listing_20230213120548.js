@@ -5,7 +5,6 @@ import MainButton from "../components/Button.js";
 import styled from "styled-components";
 import { useState } from "react";
 import axios from "axios";
-import ListCard from "../components/ListCard";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 
 
@@ -28,11 +27,6 @@ console.log(propertiesForRent, propertiesForSale);
             
              type="text"></input>
         </form>
-
-        <div>
-            {propertiesForRent.map((property) => <ListCard property={property} key={property.id} />)}
-        </div>
-
        
 
         <NavBar></NavBar>

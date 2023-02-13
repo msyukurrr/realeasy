@@ -30,7 +30,7 @@ console.log(propertiesForRent, propertiesForSale);
         </form>
 
         <div>
-            {propertiesForRent.map((property) => <ListCard property={property} key={property.id} />)}
+            {propertiesForRent.map((property) => <ListCard price={price} key={property.id} />)}
         </div>
 
        

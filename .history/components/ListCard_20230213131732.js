@@ -16,8 +16,8 @@ const TextCont = styled.div`
     position:absolute;
     background-color:white;
     z-index:1;
-    width:80%;
-    height:20%;
+    width:280px;
+    height:55px;
     margin-top:120px;
     border-radius:20px;
     color:black;
@@ -27,24 +27,23 @@ const TextCont = styled.div`
 
 export default function ListCard({
     property: {
-        coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVarified,externalID, location, name
+        coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVarified, 
     }
     
 }) {
 
     
     
-    return ( 
+    return ( <Link href={`/property/${externalID}`} passHref>
         <CardCont>
-            
             <TextCont>
-                <h4 style={{marginTop:8, marginLeft:20}}>{title}</h4>
-                <p style={{marginTop:-18, marginLeft:20}}>${price}</p>
+                <h4 style={{marginTop:8, marginLeft:20}}></h4>
+                <p style={{marginTop:-18, marginLeft:20}}></p>
             </TextCont>
         </CardCont>
 
     
-    
+    </Link>
     
   
     )

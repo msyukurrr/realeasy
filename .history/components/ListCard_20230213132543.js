@@ -16,8 +16,8 @@ const TextCont = styled.div`
     position:absolute;
     background-color:white;
     z-index:1;
-    width:80%;
-    height:20%;
+    width:280px;
+    height:55px;
     margin-top:120px;
     border-radius:20px;
     color:black;
@@ -38,8 +38,8 @@ export default function ListCard({
         <CardCont>
             
             <TextCont>
-                <h4 style={{marginTop:8, marginLeft:20}}>{title}</h4>
-                <p style={{marginTop:-18, marginLeft:20}}>${price}</p>
+                <h4 style={{marginTop:8, marginLeft:20}}>${price}</h4>
+                <p style={{marginTop:-18, marginLeft:20}}>{title}</p>
             </TextCont>
         </CardCont>
 
