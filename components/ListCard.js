@@ -1,49 +1,32 @@
 import styled from "styled-components";
 import Link from "next/link";
-
-const CardCont = styled.div`
-    display:flex;
-    justify-content: center;
-    width:305px;
-    height:168px;
-    
-    
-
-`;
-
-const TextCont = styled.div`
-    display:flex;
-    position:absolute;
-    background-color:white;
-    z-index:1;
-    width:80%;
-    height:20%;
-    margin-top:120px;
-    border-radius:20px;
-    color:black;
-    flex-direction:column;
-`
+import DefaultImage from '../public/house.jpeg';
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 
 export default function ListCard({
     property: {
-        coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVarified,externalID, location, name
+        coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVarified, externalID, location, name
     }
-    
 }) {
+    return ( <Link href={`/property/${externalID}`} passHref >
+    
+        <div className={styles.cardCont}>
 
-    
-    
-    return ( 
-        <CardCont>
-            
-            <TextCont>
-                <h4 style={{marginTop:8, marginLeft:20}}>{title}</h4>
+            <div className={styles.textCont}>
+                <Image className={styles.image} src={coverPhoto ? coverPhoto.url : DefaultImage} alt="img" width={150} height={130}/>
+                <div className={styles.cardTxt}>
+                    <h4 style={{marginTop:8, marginLeft:20}}>{title}</h4>
                 <p style={{marginTop:-18, marginLeft:20}}>${price}</p>
-            </TextCont>
-        </CardCont>
-
-    
+                <p>Beds:{rooms}</p>
+                <p>Bath:{baths}</p>
+                </div>
+                
+            </div>
+        </div>
+          
+    </Link>
     
     
   
