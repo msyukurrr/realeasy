@@ -30,7 +30,7 @@ console.log(propertiesForRent, propertiesForSale);
         </form>
 
         <div>
-            {propertiesForRent.slice(0,5).map((property) => <ListCard property={property} key={property.id} />)}
+            {propertiesForRent.slice(0,10).map((property) => <ListCard property={property} key={property.id} />)}
         </div>
 
        

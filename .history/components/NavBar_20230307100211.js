@@ -32,7 +32,7 @@ export default function NavBar({
             </div>
         </Link>
         <Link href="/profile">
-            <div className={styles.profilecont}>
+            <div>
                 <Image src='/user.png' height={38} width={40}></Image>
                 <span>Profile</span>
             </div>

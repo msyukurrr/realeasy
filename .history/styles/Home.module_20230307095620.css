@@ -49,8 +49,12 @@ color:black;
 .homecont {
   width: 50px;
   height:50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
+
 }
 
 .wishlistcont {

@@ -33,8 +33,6 @@ color:black;
   bottom:0;
   width:100%;
   display: grid;
-  justify-content: center;
-  grid-template-columns: 20% 20% 20% 20%;
 }
 
 .navbar {
@@ -43,14 +41,18 @@ color:black;
   width:100%;
   height:60px;
   background-color: #E6EEF8;
-  
+  flex-direction: row;
 }
 
 .homecont {
   width: 50px;
   height:50px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
+
 }
 
 .wishlistcont {
