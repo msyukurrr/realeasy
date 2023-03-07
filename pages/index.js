@@ -9,11 +9,12 @@ import NavBar from '../components/NavBar'
 import ListCard from '../components/ListCard'
 import FavCard from '../components/FavCard'
 import Title from '../components/Title'
-
+import Image from 'next/image'
 import CircleIcon from '../components/IconCircle'
+import { GetStaticProps } from '../pages/listing';
+import { baseUrl, fetchApi } from "../utils/fetchApi";
 
-
-export default function Home() {
+export default function Home({ propertiesForSale, propertiesForRent }) {
   const r = useRouter();
 
 
@@ -61,8 +62,10 @@ export default function Home() {
 
       <h3 style={{color:'#5AA1FD', textAlign:'center', paddingBottom:20}}>New listings near you</h3>
 
-      <div  ></div>
-        <ListCard/>
+      <div></div>
+        
+        {propertiesForRent.slice(0,10).map((property) => <ListCard property={property} key={property.id} />)}
+        
       </div>
 
       <NavBar></NavBar>
@@ -71,4 +74,16 @@ export default function Home() {
 
     </>
   )
+}
+
+export async function getStaticProps() {
+  const propertyForSale = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6`)
+  const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`)
+
+  return {
+      props: {
+          propertiesForSale: propertyForSale?.hits,
+          propertiesForRent: propertyForRent?.hits
+      }
+  };
 }
