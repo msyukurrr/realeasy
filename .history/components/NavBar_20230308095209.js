@@ -18,7 +18,7 @@ export default function NavBar({
         <Link href="/wishlist">
             <div className={styles.wishlistcont}>
                 <Image src='/wishlist.png' height={35} width={30}></Image>
-                <span >Wishlist</span>
+                <span style={{paddingTop:5px}}>Wishlist</span>
             </div>
         </Link>
         <Link href="/listing">
