@@ -7,7 +7,6 @@ const Cont = styled.div`
     background-color:#E6EEF8;
     position:fixed;
     z-index:1;
-    width:100%;
    
 
 `;

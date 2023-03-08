@@ -36,7 +36,7 @@ color:black;
   background-color:#E6EEF8 ;
   justify-content: center;
   grid-template-columns: 20% 20% 20% 20%;
- 
+  align-items: center;
  
 }
 
@@ -45,8 +45,8 @@ color:black;
   justify-content: space-around;
   width:100%;
   height:60px;
-  justify-content: center;
- 
+  align-items: center;
+  
 }
 
 .homecont {
@@ -56,12 +56,12 @@ color:black;
   align-items: center;
   color:#5AA1FD;
   flex-direction: column;
-  margin-top:10%;
-  margin-bottom: 10%;
+
+  
 }
 
 .wishlistcont {
-width: 50px;
+  width: 50px;
 height: 50px;
 display:flex;
 flex-direction: column;
@@ -269,9 +269,4 @@ display: flex;
   .logo img {
     filter: invert(1);
   }
-}
-
-.map {
-  width: 100%;
-  height: 40rem;
 }

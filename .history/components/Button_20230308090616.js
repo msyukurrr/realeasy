@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 const ButtonCont = styled.div`
 display: flex;
-margin-top:10%;
 `
 
 const Button = styled.button`
 display:flex;
 flex-direction: column;
-margin: 10px;
+margin: 10%;
 align-items: center;
 justify-content: center;
 background-color: white;
 color: #5AA1FD;
+
 height: ${props=>props.height};
 width: ${props=>props.width};
 border-radius: 15px;
