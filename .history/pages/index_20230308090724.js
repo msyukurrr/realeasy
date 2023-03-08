@@ -62,7 +62,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 
       <h3 style={{color:'#5AA1FD', textAlign:'center'}}>New listings near you</h3>
 
-      <div className={styles.list}></div>
+      <div></div>
         
         {propertiesForRent.slice(0,10).map((property) => <ListCard property={property} key={property.id} />)}
         

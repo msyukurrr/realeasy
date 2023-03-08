@@ -7,21 +7,17 @@ display: flex;
 const Button = styled.button`
 display:flex;
 flex-direction: column;
-margin: 10px;
+margin: 10%;;
 align-items: center;
 justify-content: center;
 background-color: white;
 color: #5AA1FD;
-filter: drop-shadow(4px 2px 10px #949494);
+
 height: ${props=>props.height};
 width: ${props=>props.width};
 border-radius: 15px;
 border: none;
-&:hover{
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 2px 2px #888888;
-}
+
 `
 
 const Icon = styled.img`

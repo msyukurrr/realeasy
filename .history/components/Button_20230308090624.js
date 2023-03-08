@@ -12,15 +12,12 @@ align-items: center;
 justify-content: center;
 background-color: white;
 color: #5AA1FD;
+
 height: ${props=>props.height};
 width: ${props=>props.width};
 border-radius: 15px;
 border: none;
-&:hover{
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 2px 2px #888888;
-}
+
 `
 
 const Icon = styled.img`

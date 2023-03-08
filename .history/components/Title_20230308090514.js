@@ -4,10 +4,9 @@ const Cont = styled.div`
     display:flex;
     justify-content:left;
     padding:25px;
-    background-color:#E6EEF8;
+    width:100%;
     position:fixed;
     z-index:1;
-    width:100%;
    
 
 `;

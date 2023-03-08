@@ -33,11 +33,8 @@ color:black;
   bottom:0;
   width:100%;
   display: grid;
-  background-color:#E6EEF8 ;
   justify-content: center;
   grid-template-columns: 20% 20% 20% 20%;
- 
- 
 }
 
 .navbar {
@@ -45,8 +42,8 @@ color:black;
   justify-content: space-around;
   width:100%;
   height:60px;
-  justify-content: center;
- 
+  background-color: #E6EEF8;
+  
 }
 
 .homecont {
@@ -54,47 +51,34 @@ color:black;
   height:50px;
   justify-content: center;
   align-items: center;
-  color:#5AA1FD;
-  flex-direction: column;
-  margin-top:10%;
-  margin-bottom: 10%;
 }
 
 .wishlistcont {
-width: 50px;
+  width: 50px;
 height: 50px;
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-color:#5AA1FD;
+margin-left: 30px;
 margin-top:10%;
 margin-bottom: 10%;
 }
 
-.listingcont {
+.listingCont {
   width: 50px;
-  height: 50px;
-  color:#5AA1FD;
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-left: 30px;
 margin-top:10%;
-margin-bottom: 10%;
-
 }
 
 .profilecont {
-  width: 50px;
-  height: 50px;
   display:flex;
+  margin-left: 30px;
   margin-top:10%;
-margin-bottom: 10%;
-  display:flex;
-flex-direction: column;
-justify-content: center;
-color:#5AA1FD;
 
 }
 
@@ -114,10 +98,9 @@ display: flex;
 }
 
 .list {
-  
+
   display: flex;
-  margin-bottom:-25%;
-  
+  margin-bottom:-20%;
 }
 
 
