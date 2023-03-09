@@ -60,10 +60,10 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           ></MainButton>
       </div>
 
-      <a href="/map">
+      
        <h3 style={{color:'#5AA1FD', textAlign:'center'}}>New listings near you</h3>
 
-      </a>
+     
 
       <div className={styles.list}></div>
         

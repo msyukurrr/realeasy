@@ -9,7 +9,7 @@ import NavBar from '../components/NavBar'
 import ListCard from '../components/ListCard'
 import FavCard from '../components/FavCard'
 import Title from '../components/Title'
-import {Image, Link} from 'next/image'
+import Image from 'next/image'
 import CircleIcon from '../components/IconCircle'
 import { GetStaticProps } from '../pages/listing';
 import { baseUrl, fetchApi } from "../utils/fetchApi";
@@ -60,10 +60,10 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           ></MainButton>
       </div>
 
-      <a href="/map">
+      <Link href="/map">
        <h3 style={{color:'#5AA1FD', textAlign:'center'}}>New listings near you</h3>
 
-      </a>
+      </Link>
 
       <div className={styles.list}></div>
         

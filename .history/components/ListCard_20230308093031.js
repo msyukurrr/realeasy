@@ -19,7 +19,7 @@ export default function ListCard({
                 <div className={styles.cardTxt}>
                     <h4 style={{marginTop:8, marginLeft:20}}>{title}</h4>
                     <p style={{marginTop:-18, marginLeft:20}}>${price}</p>
-                    <p style={{marginLeft:20, marginBottom:-10, marginTop:-10}}>Beds:{rooms}</p>
+                    <p style={{marginLeft:20, marginBottom:-10}}>Beds:{rooms}</p>
                     <p style={{marginLeft:20}}>Bath:{baths}</p>
                 </div>
                 

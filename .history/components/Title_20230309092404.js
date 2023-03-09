@@ -9,7 +9,7 @@ export default function Title() {
 
     return ( 
     <div className={styles.logocont}>
-        <Image src="/realEasy.png" width={80} height={50}/>
+        <Image src="realEasy.png" width={100} height={100}/>
     </div>
 
     )

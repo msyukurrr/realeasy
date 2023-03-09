@@ -11,14 +11,14 @@ export default function NavBar({
     <div className={styles.navbarcont}>
         <Link href="/">
             <div className={styles.homecont}>
-                <Image src='/logo.png' height={40} width={40} alt="icon"/>
+                <Image src='/logo.png' height={45} width={45} alt="icon"/>
                 <span>Home</span>
             </div>
         </Link>
         <Link href="/wishlist">
             <div className={styles.wishlistcont}>
                 <Image src='/wishlist.png' height={35} width={30}></Image>
-                <span >Wishlist</span>
+                <span style={{paddingTop:5}}>Wishlist</span>
             </div>
         </Link>
         <Link href="/listing">
