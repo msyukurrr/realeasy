@@ -11,7 +11,7 @@ export default function NavBar({
     <div className={styles.navbarcont}>
         <Link href="/">
             <div className={styles.homecont}>
-                <Image src='/logo.png' height={40} width={40} alt="icon"/>
+                <Image src='/logo.png' height={35} width={45} alt="icon"/>
                 <span>Home</span>
             </div>
         </Link>
