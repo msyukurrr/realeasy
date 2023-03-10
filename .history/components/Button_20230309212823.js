@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import styles from "../styles/Home.module.css";
+
 
 const Icon = styled.img`
 height: ${props=>props.height};
@@ -19,7 +19,7 @@ export default function MainButton ({
     w="69px",
     fs="11px",
     iconh="35px",
-    iconw="35px" 
+    iconw="35px"
 }){
     return <div className={styles.buttoncont}>
         <div className={styles.button} onClick={onClick} height={h} width={w}>

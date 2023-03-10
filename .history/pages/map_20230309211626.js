@@ -2,14 +2,13 @@ import NavBar from "../components/NavBar";
 import Heading from "../components/Heading";
 import style from "../styles/Home.module.css";
 import Map from "../components/MapComp";
-import Title from "../components/Title";
-
+import NavBar from "../components/NavBar";
 
 export default function MapPage(){
 
     return(
         <>
-        <Title/>
+        <NavBar/>
         <Map/>
         <NavBar/>
 
