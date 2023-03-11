@@ -39,25 +39,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
       <div style={{display:'flex', flexDirection:"column", marginTop:0}}>
   
       <div style={{display:"flex", position:'relative'}}>
-          <MainButton
-            w='135px'
-            h='135px'
-            src='./findanagent.png'
-            iconh='70px'
-            iconw='95px'
-            lbltxt='Find an Agent'
-            fs='16px'
-            onClick={() => r.push("/findanagent")}
-          ></MainButton>
-          <MainButton
-            w='135px'
-            h='135px'
-            src='./lightbulb.png'
-            iconh='75px'
-            iconw='80px'
-            lbltxt='Tips'
-            fs='16px'
-          ></MainButton>
+          <MainButton/>
       </div>
 
       <h3 style={{color:'#5AA1FD', textAlign:'center'}}>New listings near you</h3>

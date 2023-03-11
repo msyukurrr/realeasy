@@ -1,49 +1,23 @@
 import styled from "styled-components";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
-const ButtonCont = styled.div`
-display: flex;
-margin-top:10%;
-`
 
-const Button = styled.button`
-display:flex;
-flex-direction: column;
-margin: 10px;
-align-items: center;
-justify-content: center;
-background-color: white;
-color: #5AA1FD;
-height: ${props=>props.height};
-width: ${props=>props.width};
-border-radius: 15px;
-border: none;
+export default function MainButton ({ }){
+const r = useRouter();
 
-`
-
-const Icon = styled.img`
-height: ${props=>props.height};
-width: ${props=>props.width};
-`
-
-const Lbl = styled.span`
-display: block;
-font-size: ${props=>props.fontsize};
-`
-
-export default function MainButton ({ 
-    onClick=()=>{},
-    src='./logo.png',
-    lbltxt='House',
-    h="69px",
-    w="69px",
-    fs="11px",
-    iconh="35px",
-    iconw="35px"
-}){
-    return <ButtonCont>
-        <Button onClick={onClick} height={h} width={w}>
-            <Icon src={src} height={iconh} width={iconw}></Icon>
-            <Lbl fontsize={fs}>{lbltxt}</Lbl>
-        </Button>
-    </ButtonCont>
+    return <div style={{display:'flex', marginTop:'10%'}}>
+        <button onClick={() => {r.push('/findanagent')}
+        }
+        style={{display:'flex', flexDirection:'column', margin:10, alignItems:'center', justifyContent:'center', backgroundColor:'white', color:'#5AA1FD', height:150, width: 150, borderRadius:15, border:'none' }}>
+            <Image src={'/findanagent.png'} width={100} height={80}></Image>
+            <div style={{fontSize:16}}>Find an Agent</div>
+        </button>
+        <button style={{display:'flex', flexDirection:'column', margin:10, alignItems:'center', justifyContent:'center', backgroundColor:'white', color:'#5AA1FD', height:150, width: 150, borderRadius:15, border:'none' }}>
+            <Image src={'/findanagent.png'} width={100} height={80}></Image>
+            <div style={{fontSize:16}}>Tips</div>
+        </button>
+    </div>
 }
+
+

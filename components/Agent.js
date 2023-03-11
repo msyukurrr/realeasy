@@ -1,18 +1,12 @@
 import styled from "styled-components";
+import record from '../data/agent.json'
+import styles from '../styles/Home.module.css'
 
 const Container = styled.div`
 display: flex;
 justify-content: center;
 `
 
-const Box = styled.div`
-display: flex;
-height: 100px;
-width: 350px;
-background-color: white;
-border-radius: 15px;
-margin: 10px;
-`
 const Image = styled.img`
 height: 80px;
 width: 80px;
@@ -49,23 +43,20 @@ margin-top: 2px;
 
 
 export default function AgentListing({
-    src='./yungrajaa.jpeg',
-    name="Yung Raja",
-    agency="RE/MAX",
-    experience="20 years of experience",
-    listings="10 active listings"
 }){
     return <>
-    <Container>
-    <Box>
-        <Image src={src}></Image>
-        <Description>
-        <Name>{name}</Name>
-        <Agency>{agency}</Agency>
-        <Experience>{experience}</Experience>
-        <Listings>{listings}</Listings>
-        </Description>
-    </Box>
-    </Container>
+{
+              record.map( (rec, index) => {
+                return(
+                    <div key={index} className={styles.agentCont}>
+                        <div style={{display:'flex', flexDirection:'column', marginTop:30, marginLeft:20}}>
+                        <div className={styles.agentName}>{rec.name}</div>
+                        <div className={styles.agentAgency}>{rec.agency}</div>
+                        </div>
+                    </div>
+
+                )
+              })
+            }
     </>
 }

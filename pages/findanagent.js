@@ -10,10 +10,6 @@ export default function FindAnAgent(){
 
         <div style={{marginTop:50}}>
         <AgentListing></AgentListing>
-        <AgentListing></AgentListing>
-        <AgentListing></AgentListing>
-        <AgentListing></AgentListing>
-        <AgentListing></AgentListing>
         </div>
        
 
