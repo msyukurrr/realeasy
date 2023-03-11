@@ -1,83 +1,97 @@
 [
   {
+    "src": "/cherylbarnes.png",
     "name": "Cheryl Barnes",
     "agency": "RE/MAX Masters",
     "rate": 4.95,
     "listings": "85 active listings"
   },
   {
+    "src": "/brandon.png",
     "name": "Brandon Gee-Moore",
     "agency": "RE/MAX Crest",
     "rate": 4.97,
     "listings": "10 active listings"
   },
   {
+    "src": "/phillegree.png",
     "name": "Phil LeGree",
     "agency": "Keller Williams Realty",
     "rate": 4.97,
     "listings": "134 active listings"
   },
   {
+    "src": "/lindsie.png",
     "name": "Lindsie Thomlinson",
     "agency": "RE/MAX Select",
     "rate": 4.96,
     "listings": "98 active listings"
   },
   {
+    "src": "/brianmac.png",
     "name": "Brian MacDougall",
     "agency": "RE/MAX Crest",
     "rate": 4.96,
     "listings": "3 active listings"
   },
   {
+    "src": "/layne.png",
     "name": "Layne Britton",
     "agency": "eXp Realty",
     "rate": 4.96,
     "listings": "20 active listings"
   },
   {
+    "src": "/kenhu.png",
     "name": "Ken Hu",
     "agency": "Macdonald Realty",
     "rate": 4.97,
     "listings": "47 active listings"
   },
   {
+    "src": "/willawang.png",
     "name": "Willa Wang",
     "agency": "RE/MAX Crest",
     "rate": 4.97,
     "listings": "120 active listings"
   },
   {
+    "src": "/andyhsu.png",
     "name": "Andy Hsu",
     "agency": "eXp Realty",
     "rate": 4.98,
     "listings": "1 active listing"
   },
   {
+    "src": "/susan.png",
     "name": "Susan Carhoun",
     "agency": "RE/MAX Crest",
     "rate": 4.95,
     "listings": "58 active listings"
   },
   {
+    "src": "/nicola.png",
     "name": "Nicola Campbell",
     "agency": "RE/MAX Crest",
     "rate": 4.98,
     "listings": "23 active listings"
   },
   {
+    "src": "/simon.png",
     "name": "Simon Poon",
     "agency": "RE/MAX City",
     "rate": 5,
     "listings": "18 active listings"
   },
   {
+    "src": "/patrick.png",
     "name": "Patrick Hung",
     "agency": "Grand Central Realty",
     "rate": 4.97,
     "listings": "5 active listings"
   },
   {
+    "src": "/julia.png",
     "name": "Julia Leong",
     "agency": "RE/MAX Crest",
     "rate": 4.99,

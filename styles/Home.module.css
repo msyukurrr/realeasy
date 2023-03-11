@@ -310,19 +310,17 @@ border: none;
 
 .agentCont{
 display: flex;
-height: 100px;
+height: 150px;
 width: 350px;
 background-color: white;
 border-radius: 15px;
-margin: 10px;
+margin:10px;
 }
 
-.agentName{
-font-weight: bold;
-font-size: 18px;
-margin-bottom: 2px;
-color: black;
+.agentCont:hover{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
+
 
 .agentAgency{
 opacity: 0.5;
@@ -330,24 +328,18 @@ color: black;
 font-size: 14px;
 }
 
-.agentCont{
-display: flex;
-height: 100px;
-width: 350px;
-background-color: white;
-border-radius: 15px;
-margin: 10px;
-}
 
 .agentName{
 font-weight: bold;
 font-size: 18px;
-margin-bottom: 2px;
 color: black;
 }
 
-.agentAgency{
-opacity: 0.5;
-color: black;
-font-size: 14px;
+.agentRating{
+  color: black;
+}
+
+.agentListing{
+  color: black;
+  font-size: 13px;
 }
