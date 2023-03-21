@@ -49,14 +49,14 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 
       <div className={styles.list}></div>
         
-        {propertiesForSale.slice(0,5).map((property) => <ListCard property={property} key={property.id} />)}
+        {propertiesForRent.slice(0,10).map((property) => <ListCard property={property} key={property.id} />)}
         
       </div>
 
 
       <div style={{height:200}}>
-      <a href="/listing">
-       <h3 style={{color:'#5AA1FD', textAlign:'center'}}>See more...</h3>
+      <a href="/map">
+       <h3 style={{color:'#5AA1FD', textAlign:'center'}}>New listings near you</h3>
 
       </a>
 

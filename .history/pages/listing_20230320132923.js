@@ -29,8 +29,8 @@ console.log(propertiesForRent, propertiesForSale);
              type="text"></input>
         </form>
 
-        <div style={{marginBottom:200}}>
-            {propertiesForSale.slice(0,10).map((property) => <ListCard  property={property} key={property.id} />)}
+        <div style={{marginBottom:10}}>
+            {propertiesForRent.slice(0,5).map((property) => <ListCard property={property} key={property.id} />)}
         </div>
 
        

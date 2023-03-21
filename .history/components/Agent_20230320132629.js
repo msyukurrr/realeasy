@@ -48,8 +48,8 @@ export default function AgentListing({
                             <div style={{display:'flex', flexDirection:'column', marginTop:10, marginLeft:20}}>
                                 <div className={styles.agentName}>{rec.name}</div>
                                 <div className={styles.agentAgency}>{rec.agency}</div>
-                                <div style={{display:'flex', flexDirection:"row"}}>
-                                    <AiFillStar width={50} height={50} color="black"/>
+                                <div>
+                                    <AiFillStar width={50} height={50} color={white}/>
                                     <div className={styles.agentRating}>{rec.rate}</div>
                                 </div>
                                 

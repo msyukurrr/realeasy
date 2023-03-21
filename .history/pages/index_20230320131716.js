@@ -49,7 +49,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 
       <div className={styles.list}></div>
         
-        {propertiesForSale.slice(0,5).map((property) => <ListCard property={property} key={property.id} />)}
+        {propertiesForRent.slice(0,10).map((property) => <ListCard property={property} key={property.id} />)}
         
       </div>
 

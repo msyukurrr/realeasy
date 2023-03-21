@@ -2,7 +2,7 @@ import styled from "styled-components";
 import record from '../data/agent.json'
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
-import { AiFillStar } from "react-icons/ai";
+import AiFillStar from "react-icons/ai"
 
 const Container = styled.div`
 display: flex;
@@ -48,8 +48,7 @@ export default function AgentListing({
                             <div style={{display:'flex', flexDirection:'column', marginTop:10, marginLeft:20}}>
                                 <div className={styles.agentName}>{rec.name}</div>
                                 <div className={styles.agentAgency}>{rec.agency}</div>
-                                <div style={{display:'flex', flexDirection:"row"}}>
-                                    <AiFillStar width={50} height={50} color="black"/>
+                                <div>
                                     <div className={styles.agentRating}>{rec.rate}</div>
                                 </div>
                                 
