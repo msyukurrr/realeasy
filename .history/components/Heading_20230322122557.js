@@ -5,7 +5,6 @@ display: flex;
 text-align:center;
 width: 300px;
 height: 100px;
-margin-top:50px;
 
 `
 

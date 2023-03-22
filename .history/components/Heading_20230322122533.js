@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
 display: flex;
-margin-left: 50px;
+
 width: 300px;
 height: 100px;
 
@@ -22,7 +22,7 @@ export default function Heading({
 }){
     return<>
     <Container>
-    <Word fontweight={fw}
+    <Word fontweight={fw} color={color}
     >{headingtxt}</Word>
     </Container>
     </>

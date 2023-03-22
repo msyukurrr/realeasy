@@ -17,6 +17,11 @@ export default function Listing({ propertiesForSale, propertiesForRent }){
    
 console.log(propertiesForRent, propertiesForSale);
 
+
+
+
+    
+
     return (<div className={styles.listing}>
         <Title></Title>
              <Heading headingtxt="Where are you looking?" color="#5AA1FD" fw="bold"/>

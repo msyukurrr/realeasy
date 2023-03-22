@@ -12,25 +12,25 @@ export default function NavBar({
         <Link href="/">
             <div className={styles.homecont}>
                 <Image src='/logo.png' height={40} width={40} alt="icon"/>
-                <span>Home</span>
+                <span style={{marginTop:-10}}>Home</span>
             </div>
         </Link>
         <Link href="/wishlist">
             <div className={styles.wishlistcont}>
                 <Image src='/wishlist.png' height={35} width={30}></Image>
-                <span style={{paddingTop:8}}>Wishlist</span>
+                <span >Wishlist</span>
             </div>
         </Link>
         <Link href="/listing">
             <div className={styles.listingcont} >
                 <Image src='/listing.png' height={38} width={45}></Image>
-                <span style={{paddingTop:5}}>Listing</span>
+                <span>Listing</span>
             </div>
         </Link>
         <Link href="/profile">
             <div className={styles.profilecont}>
                 <Image src='/user.png' height={38} width={40}></Image>
-                <span style={{paddingTop:8}}>Profile</span>
+                <span>Profile</span>
             </div>
         </Link>
     </div>

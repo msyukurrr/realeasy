@@ -24,13 +24,13 @@ export default function NavBar({
         <Link href="/listing">
             <div className={styles.listingcont} >
                 <Image src='/listing.png' height={38} width={45}></Image>
-                <span style={{paddingTop:5}}>Listing</span>
+                <span style={{paddingTop:8}}>Listing</span>
             </div>
         </Link>
         <Link href="/profile">
             <div className={styles.profilecont}>
                 <Image src='/user.png' height={38} width={40}></Image>
-                <span style={{paddingTop:8}}>Profile</span>
+                <span style={{paddingTop:10}}>Profile</span>
             </div>
         </Link>
     </div>

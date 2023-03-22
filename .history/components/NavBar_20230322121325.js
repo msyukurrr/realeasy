@@ -24,7 +24,7 @@ export default function NavBar({
         <Link href="/listing">
             <div className={styles.listingcont} >
                 <Image src='/listing.png' height={38} width={45}></Image>
-                <span style={{paddingTop:5}}>Listing</span>
+                <span style={{paddingTop:7}}>Listing</span>
             </div>
         </Link>
         <Link href="/profile">

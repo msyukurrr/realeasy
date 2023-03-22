@@ -17,6 +17,11 @@ export default function Listing({ propertiesForSale, propertiesForRent }){
    
 console.log(propertiesForRent, propertiesForSale);
 
+
+
+
+    
+
     return (<div className={styles.listing}>
         <Title></Title>
              <Heading headingtxt="Where are you looking?" color="#5AA1FD" fw="bold"/>
@@ -26,9 +31,9 @@ console.log(propertiesForRent, propertiesForSale);
              className={styles.input}
             
              type="text"></input>
-             <button style={{backgroundColor:'#5AA1FD',
+             {/* <button style={{backgroundColor:'#5AA1FD',
               border:'transparent', borderRadius:10,
-               height:30, marginTop:15, width:100}}>search</button>
+               height:30, marginTop:15, width:100}}>search</button> */}
         </form>
 
         <div>

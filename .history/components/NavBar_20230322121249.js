@@ -18,19 +18,19 @@ export default function NavBar({
         <Link href="/wishlist">
             <div className={styles.wishlistcont}>
                 <Image src='/wishlist.png' height={35} width={30}></Image>
-                <span style={{paddingTop:8}}>Wishlist</span>
+                <span style={{paddingBottom:30}}>Wishlist</span>
             </div>
         </Link>
         <Link href="/listing">
             <div className={styles.listingcont} >
                 <Image src='/listing.png' height={38} width={45}></Image>
-                <span style={{paddingTop:5}}>Listing</span>
+                <span style={{paddingBottom:10}}>Listing</span>
             </div>
         </Link>
         <Link href="/profile">
             <div className={styles.profilecont}>
                 <Image src='/user.png' height={38} width={40}></Image>
-                <span style={{paddingTop:8}}>Profile</span>
+                <span style={{paddingBottom:10}}>Profile</span>
             </div>
         </Link>
     </div>

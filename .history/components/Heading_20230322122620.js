@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 const Container = styled.div`
 display: flex;
-margin-left: 50px;
+text-align:center;
 width: 300px;
 height: 100px;
+margin-top:100px;
 
 `
 
@@ -17,12 +18,12 @@ font-weight: ${props=>props.fontweight};
 export default function Heading({
     h1="Recommended by people around you",
     fw="300",
-    color="#5AA1FD"
+    color="#5AA1FD",
     headingtxt="Recommended by people around you"
 }){
     return<>
     <Container>
-    <Word fontweight={fw}
+    <Word fontweight={fw} color={color}
     >{headingtxt}</Word>
     </Container>
     </>

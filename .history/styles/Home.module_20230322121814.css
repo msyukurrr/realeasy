@@ -32,7 +32,8 @@ color:black;
   display:flex;
   justify-content:left;
   padding:25px;
-  background-color:transparent;
+  background: rgb(230,238,248);
+  background: linear-gradient(0deg, rgba(230,238,248,1) 58%, rgba(236,242,250,0.9315661656891495) 67%, rgba(250,251,254,0.7526805351906158) 100%, rgba(255,255,255,0) 100%);
   position:fixed;
   z-index:1;
   top:0px;
@@ -179,7 +180,7 @@ border: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgb(230,238,248), #5AA1FD);
+  background-image: linear-gradient(#5AA1FD, white);
   
 }
 

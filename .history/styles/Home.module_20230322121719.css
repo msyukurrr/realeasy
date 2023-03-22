@@ -32,7 +32,7 @@ color:black;
   display:flex;
   justify-content:left;
   padding:25px;
-  background-color:transparent;
+  background-color:#e6eef8a3 ;
   position:fixed;
   z-index:1;
   top:0px;
@@ -179,7 +179,7 @@ border: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgb(230,238,248), #5AA1FD);
+  background-image: linear-gradient(#5AA1FD, white);
   
 }
 

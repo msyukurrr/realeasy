@@ -12,7 +12,7 @@ export default function NavBar({
         <Link href="/">
             <div className={styles.homecont}>
                 <Image src='/logo.png' height={40} width={40} alt="icon"/>
-                <span>Home</span>
+                <span  style={{paddingTop:-10}}>Home</span>
             </div>
         </Link>
         <Link href="/wishlist">

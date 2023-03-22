@@ -17,11 +17,16 @@ export default function Listing({ propertiesForSale, propertiesForRent }){
    
 console.log(propertiesForRent, propertiesForSale);
 
+
+
+
+    
+
     return (<div className={styles.listing}>
         <Title></Title>
              <Heading headingtxt="Where are you looking?" color="#5AA1FD" fw="bold"/>
          <form style={{paddingTop:15, display:'flex',
-          flexDirection:'column', alignItems:'center' }}>
+          flexDirection:'column', justifyContent:'center' }}>
            <input placeholder="Type a city..." 
              className={styles.input}
             

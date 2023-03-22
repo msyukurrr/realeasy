@@ -17,18 +17,20 @@ export default function Listing({ propertiesForSale, propertiesForRent }){
    
 console.log(propertiesForRent, propertiesForSale);
 
+
+
+
+    
+
     return (<div className={styles.listing}>
         <Title></Title>
              <Heading headingtxt="Where are you looking?" color="#5AA1FD" fw="bold"/>
-         <form style={{paddingTop:15, display:'flex',
-          flexDirection:'column', alignItems:'center' }}>
+         <form style={{paddingTop:15, display:'flex', flexDirection:'column', }}>
            <input placeholder="Type a city..." 
              className={styles.input}
             
              type="text"></input>
-             <button style={{backgroundColor:'#5AA1FD',
-              border:'transparent', borderRadius:10,
-               height:30, marginTop:15, width:100}}>search</button>
+             <button style={{backgroundColor:'#5AA1FD', border:'transparent'}}>search</button>
         </form>
 
         <div>
