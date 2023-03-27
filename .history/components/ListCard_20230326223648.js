@@ -24,8 +24,8 @@ export default function ListCard({
                     <h4 style={{marginTop:8, marginLeft:20}}>{title.length > 30 ? `${title.substring(0,30)}...` : title}</h4>
                   
                        <p style={{ marginLeft:20}}>CAD ${millify(price)}</p>
-                    <p style={{marginLeft:20, marginBottom:-10,  alignItems:'center', display:'flex'}}><FaBed/> {rooms}</p>
-                    <p style={{marginLeft:20, marginTop:10, alignItems:'center', display:'flex'}}><FaBath/> {baths}</p>
+                    <p style={{marginLeft:20, marginBottom:-10, marginTop:-10, alignItems:'center', display:'flex'}}><FaBed/> {rooms}</p>
+                    <p style={{marginLeft:20, alignItems:'center', display:'flex'}}><FaBath/> {baths}</p>
                 </div>
                 
             </div>
