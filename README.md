@@ -1,3 +1,3 @@
 API Keys
 
-(title)[url]
+Bayut Real Estate API - https://rapidapi.com/apidojo/api/bayut
