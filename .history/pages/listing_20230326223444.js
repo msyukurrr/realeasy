@@ -10,7 +10,7 @@ import { baseUrl, fetchApi } from "../utils/fetchApi";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import SearchFilters from "../components/searchFilter";
-import { ChakraProvider } from "@chakra-ui/react";
+import { Card, ChakraProvider } from "@chakra-ui/react";
 import { GetStaticProps } from "../utils/fetchApi.js";
 import { Text, Flex, Box, Icon } from "@chakra-ui/react";
 import {BiCommentError} from "react-icons/bi";
@@ -61,9 +61,9 @@ const router = useRouter();
       <Text fontSize='2xl' p='4' fontWeight='bold' color={'white'}>
         Properties {router.query.purpose}
       </Text>
-      <div >
-        {properties.map((property) => <ListCard  property={property} key={property.id} />)}
-      </div>
+      <Card style={{lineHeight:2.5}}>
+        {properties.map((property) => <ListCard property={property} key={property.id} />)}
+      </Card>
       {properties.length === 0 && (
         <Flex justifyContent='center' alignItems='center' flexDir='column' marginTop='5' marginBottom='5'>
           <Image src={BiCommentError} />

@@ -61,8 +61,8 @@ const router = useRouter();
       <Text fontSize='2xl' p='4' fontWeight='bold' color={'white'}>
         Properties {router.query.purpose}
       </Text>
-      <div >
-        {properties.map((property) => <ListCard  property={property} key={property.id} />)}
+      <div style={{lineHeight:2.5}}>
+        {properties.map((property) => <ListCard property={property} key={property.id} />)}
       </div>
       {properties.length === 0 && (
         <Flex justifyContent='center' alignItems='center' flexDir='column' marginTop='5' marginBottom='5'>
