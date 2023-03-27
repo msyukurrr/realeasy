@@ -37,7 +37,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 
       <div style={{display:'flex', flexDirection:"column", marginTop:0}}>
   
-      <div style={{display:"flex", position:'relative'}}>
+      <div style={{display:"flex", justifyContent:'center'}}>
           <MainButton/>
       </div>
 

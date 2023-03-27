@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.3",
@@ -23,5 +24,8 @@
     "react-icons": "^4.8.0",
     "react-leaflet": "^4.2.0",
     "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.1"
   }
 }

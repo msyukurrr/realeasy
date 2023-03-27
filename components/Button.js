@@ -8,21 +8,15 @@ import { HiLightBulb } from 'react-icons/hi';
 export default function MainButton ({ }){
 const r = useRouter();
 
-    return <div style={{display:'flex', marginTop:'10%'}}>
+    return <div style={{display:'flex', marginTop:'20%', justifyContent:'center'}}>
         <button onClick={() => {r.push('/findanagent')}
         }
-        style={{display:'flex', flexDirection:'column', margin:10, alignItems:'center', fontFamily:'ubuntu, cursive'
+        style={{display:'flex', flexDirection:'column', alignItems:'center', fontFamily:'ubuntu, cursive'
         , justifyContent:'center', backgroundColor:'white', color:'#5AA1FD',
          height:120, width: 120, borderRadius:15, border:'none' }}>
             
             <BsFillPeopleFill size={60}/>
             <div style={{fontSize:16}}>Find an Agent</div>
-        </button>
-        <button style={{display:'flex', flexDirection:'column', margin:10,fontFamily:'ubuntu, cursive',
-         alignItems:'center', justifyContent:'center', backgroundColor:'white',
-          color:'#5AA1FD', height:120, width: 120, borderRadius:15, border:'none' }}>
-            <HiLightBulb size={60}/>
-            <div style={{fontSize:16}}>Tips</div>
         </button>
     </div>
 }
