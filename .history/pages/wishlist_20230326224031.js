@@ -6,7 +6,7 @@ export default function Wishlist(){
     return(
         <>
          <Title></Title>
-        <Heading headingtxt="Wishlist" color="#5AA1FD"></Heading>
+        <<Heading headingtxt="Wishlist" color="#5AA1FD"></Heading>>
         <NavBar></NavBar>
         </>
     )

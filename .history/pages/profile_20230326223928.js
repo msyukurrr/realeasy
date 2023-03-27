@@ -1,12 +1,11 @@
 import NavBar from "../components/NavBar";
 import Heading from "../components/Heading";
-import Title from "../components/Title";
 
-export default function Wishlist(){
+export default function Profile(){
     return(
         <>
          <Title></Title>
-        <Heading headingtxt="Wishlist" color="#5AA1FD"></Heading>
+        <Heading headingtxt="Profile"></Heading>
         <NavBar></NavBar>
         </>
     )
